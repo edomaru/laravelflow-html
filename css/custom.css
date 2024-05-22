@@ -1,0 +1,56 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar-laravelflow {
+    background-color: #fff;
+    border-top: 3px solid orange;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-header {
+    font-size: 1.8rem;
+}
+
+.question-summary-title {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.question-summary-title a, .question-summary-author a {
+    text-decoration: none;
+}
+
+.question-summary-author {
+    font-size: .8rem;
+}
+
+.related-tags {
+    font-size: 1.3rem;
+}
+
+ul.tags-inline, ul.tags-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tags-inline li {
+    display: inline;
+}
+
+.tag {
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    font-weight: bold;
+    font-size: 12px;
+    background: #f1f2f3;
+    color: #191e21;
+    padding: 4px 8px;
+    border-radius: 10%;
+}
+
+.tag:hover {
+    background-color: #d3d3d3;
+}
