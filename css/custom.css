@@ -12,6 +12,48 @@ body {
     font-size: 1.8rem;
 }
 
+.question-summary {
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+
+.question-summary-stats {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    font-size: 13px;
+    gap: 6px;
+    width: 100px;
+    margin-right: 16px;
+}
+
+.stats-item {
+    align-items: center;
+    display: inline-flex;
+    gap: .3em;
+    justify-content: center;
+    white-space: nowrap;
+    font-weight: 500;
+    padding: 3px 6px;
+}
+
+.stats-item.has-answers {
+    border: 1px solid hsl(148,70%,31%);
+    color: hsl(148,70%,31%);
+}
+.stats-item.has-answers.has-accepted-answer {
+    border: 1px solid hsl(148,70%,31%);
+    background-color: hsl(148,70%,31%);
+    color: #fff;
+}
+
+.question-summary-content {
+    flex-grow: 1;
+    max-width: 100%;
+}
 .question-summary-title {
     font-weight: 400;
     font-size: 1.5rem;
