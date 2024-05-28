@@ -8,6 +8,10 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
+.nav-underline {
+    gap: .5rem;
+}
+
 .page-header {
     font-size: 1.8rem;
 }
@@ -65,6 +69,13 @@ body {
 
 .question-summary-author {
     font-size: .8rem;
+}
+
+.avatar-sm img {
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
 }
 
 .related-tags {
