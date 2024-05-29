@@ -53,9 +53,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-                        <a href="#" class="btn btn-primary">Ask Question</a>
+                    <div class="border-bottom pb-3 mb-4">
+                      <div class="d-flex align-items-center justify-content-between">
+                          <h1 class="question-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+                          <a href="#" class="btn btn-primary">Ask Question</a>
+                      </div>
+                      <div class="d-flex question-meta">
+                        <div class="me-3">
+                          <span class="text-muted">Asked</span>
+                          <time datetime="2024-09-09">3 days ago</time>
+                        </div>
+                        <div class="me-3">
+                          <span class="text-muted">Modified</span> today
+                        </div>
+                        <div>
+                          <span class="text-muted">Asked</span> 3 days ago
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -64,7 +78,24 @@
                     <div class="question-content">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
-                                <a title="This question is useful" class="vote-up off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-caret-up fa-w-10 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></i></a> <span class="votes-count">1</span> <a title="This question is not useful" class="vote-down off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-caret-down fa-w-10 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></i></a> <a title="Click to mark as favorite question (Click again to undo)" class="favorite mt-2 off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-star fa-w-18 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></i> <span class="favorites-count">0</span></a>
+                                <div class="d-flex flex-column align-items-center">
+                                  <button title="This question is useful" class="btn btn-outline-secondary btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                      <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                                    </svg>
+                                  </button>
+                                  <div class="votes-count">1</div>
+                                  <button title="This question is not useful" class="btn btn-outline-secondary btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                    </svg>
+                                  </button>
+                                  <button title="Click to mark as favorite question (Click again to undo)" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                    </svg>
+                                  </button>
+                                </div>
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 <div class="question-body">
@@ -92,11 +123,33 @@
                         </div>
                     </div>
 
-                    <h2 class="mt-4">2 Answers</h2>
-                    <div class="answer-content">
-                        <div class="d-flex mt-3">
+                    <h2 class="mt-4 answer-header">2 Answers</h2>
+                    <div class="answer-content mt-4">
+                        <div class="d-flex mt-3 border-bottom">
                             <div class="flex-shrink-0">
-                                <a title="This question is useful" class="vote-up off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-caret-up fa-w-10 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></i></a> <span class="votes-count">1</span> <a title="This question is not useful" class="vote-down off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-caret-down fa-w-10 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></i></a> <a title="Click to mark as favorite question (Click again to undo)" class="favorite mt-2 off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-star fa-w-18 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></i> <span class="favorites-count">0</span></a>
+                              <div class="d-flex flex-column align-items-center">
+                                <button title="This question is useful" class="btn btn-outline-secondary btn-circle">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                    <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                                  </svg>
+                                </button>
+                                <div class="votes-count">1</div>
+                                <button title="This question is not useful" class="btn btn-outline-secondary btn-circle">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                  </svg>
+                                </button>
+                                <button title="Click to mark as favorite question (Click again to undo)" class="btn">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                  </svg>
+                                </button>
+                                <button title="Click to mark as favorite question (Click again to undo)" class="btn">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                                  </svg>
+                                </button>
+                              </div>
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 <div class="question-body">
@@ -122,7 +175,29 @@
                         </div>
                         <div class="d-flex mt-3">
                             <div class="flex-shrink-0">
-                                <a title="This question is useful" class="vote-up off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-caret-up fa-w-10 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"></path></svg></i></a> <span class="votes-count">1</span> <a title="This question is not useful" class="vote-down off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-caret-down fa-w-10 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg></i></a> <a title="Click to mark as favorite question (Click again to undo)" class="favorite mt-2 off"><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-star fa-w-18 fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></i> <span class="favorites-count">0</span></a>
+                              <div class="d-flex flex-column align-items-center">
+                                  <button title="This question is useful" class="btn btn-outline-secondary btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                      <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                                    </svg>
+                                  </button>
+                                  <div class="votes-count">1</div>
+                                  <button title="This question is not useful" class="btn btn-outline-secondary btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                    </svg>
+                                  </button>
+                                  <button title="Click to mark as favorite question (Click again to undo)" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                    </svg>
+                                  </button>
+                                  <button title="Click to mark as favorite question (Click again to undo)" class="btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                                    </svg>
+                                  </button>
+                                </div>
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 <div class="question-body">
