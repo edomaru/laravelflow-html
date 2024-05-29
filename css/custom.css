@@ -139,7 +139,11 @@ ul.tags-inline, ul.tags-list {
 .bi-check-lg {
     width: 3em;
     height: 3em;
-    color: green;
+    color: #d3d3d3;
+}
+
+.answer-accepted svg {
+    color: #18864B;
 }
 
 .bi-caret-up-fill, .bi-caret-down-fill {
@@ -151,4 +155,51 @@ ul.tags-inline, ul.tags-list {
     font-weight: 700;
     padding-top: 6px;
     padding-bottom: 6px;
+}
+
+.author {
+    text-align: left;
+    vertical-align: top;
+    width: 200px;
+}
+
+.author-info {
+    box-sizing: border-box;
+    padding: 5px 6px 7px 7px;
+    color: #636b74;
+    font-size: 13px;
+}
+
+.owner {
+    border-radius: 4px;
+    background-color: #edf5fd;
+}
+
+.related-item {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.related-item a, .author-info a {
+    text-decoration: none;
+}
+
+.answer-votes {
+    margin-top: 3px;
+    padding: 3px 0;
+    width: 40px;
+    font-size: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color:  #F1F2F3;
+    color: #3B4045;
+    white-space: nowrap;
+}
+
+.related-item .answer-accepted {
+    background-color: #18864B;
+    color: #fff;
 }
