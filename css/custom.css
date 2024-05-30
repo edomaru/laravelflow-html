@@ -136,9 +136,12 @@ ul.tags-inline, ul.tags-list {
     border-radius: 50%;
 }
 
-.bi-check-lg {
+.icon-lg {
     width: 3em;
     height: 3em;
+}
+
+.icon-gray {
     color: #d3d3d3;
 }
 
@@ -180,6 +183,8 @@ ul.tags-inline, ul.tags-list {
     display: flex;
     gap: 7px;
     align-items: center;
+    font-size: 14px;
+    text-align: justify;
 }
 
 .related-item a, .author-info a {
