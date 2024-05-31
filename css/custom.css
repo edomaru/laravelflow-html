@@ -208,3 +208,7 @@ ul.tags-inline, ul.tags-list {
     background-color: #18864B;
     color: #fff;
 }
+
+.preview-body {
+    min-height: 182px;
+}
