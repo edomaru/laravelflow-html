@@ -16,7 +16,7 @@ body {
     font-size: 1.8rem;
 }
 
-.question-summary {
+.post-item {
     position: relative;
     display: flex;
     padding: 10px;
@@ -34,6 +34,19 @@ body {
     margin-right: 16px;
 }
 
+.vote-col {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.post-col {
+    position: relative;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-left: 1rem;
+}
+
 .stats-item {
     align-items: center;
     display: inline-flex;
@@ -48,6 +61,7 @@ body {
     border: 1px solid hsl(148,70%,31%);
     color: hsl(148,70%,31%);
 }
+
 .stats-item.has-answers.has-accepted-answer {
     border: 1px solid hsl(148,70%,31%);
     background-color: hsl(148,70%,31%);
@@ -72,7 +86,7 @@ body {
     font-size: 15px;
 }
 
-.question-action {
+.action-buttons {
     position: absolute;
     display: flex;
     gap: 3px;
@@ -84,7 +98,7 @@ body {
     transition: visibility 0.2s, opacity 0.3s linear;
 }
 
-.question-summary-content:hover .question-action{
+.actionable:hover .action-buttons{
     visibility: visible;
     opacity: 1;
 }
