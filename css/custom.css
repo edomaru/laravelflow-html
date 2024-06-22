@@ -176,8 +176,16 @@ ul.tags-inline, ul.tags-list {
     color: #d3d3d3;
 }
 
+.icon-stone {
+    color: #6c757d;
+}
+
 .answer-accepted svg {
     color: #18864B;
+}
+
+.question-bookmarked svg {
+    color: orange;
 }
 
 .bi-caret-up-fill, .bi-caret-down-fill {
