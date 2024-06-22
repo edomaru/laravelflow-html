@@ -34,6 +34,18 @@ body {
     margin-right: 16px;
 }
 
+.stats-inline {
+    flex-direction: row;
+    width: auto;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    font-size: 13px;
+    gap: 6px;
+    margin-bottom: 4px;
+    margin-right: 16px;
+}
+
 .vote-col {
     display: flex;
     flex-shrink: 0;
