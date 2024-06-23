@@ -55,7 +55,10 @@
 
     <main class="py-4">
         <div class="container">
-            <h1 class="page-header">Tags</h1>
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="page-header">Tags</h1>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#new-tag-modal">Add Tag</button>
+            </div>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
                 <div class="col">
                     <div class="card h-100">
@@ -148,6 +151,33 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="modal fade" id="new-tag-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="new-tag-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="new-tag-modal-label">New tag</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="tag-name" class="form-label">Tag name</label>
+                                <input type="text" class="form-control" name="name" id="tag-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tag-description" class="form-label">Tag description</label>
+                                <textarea rows="5" class="form-control" name="description" id="tag-description"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
